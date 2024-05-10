@@ -1,32 +1,32 @@
 package com.m08;
 
 /**
- * Class representing a guest, inheriting from Person.
+ * Defines a guest entity, extending the Person class.
  */
 public class Guest extends Person {
     private String nationality;
 
     /**
-     * Retrieves the nationality of the guest.
-     * @return The nationality of the guest.
+     * Obtains the guest's nationality.
+     * @return The guest's nationality.
      */
     public String getNationality() {
         return nationality;
     }
 
     /**
-     * Sets the nationality of the guest.
-     * @param nationality The nationality to be set.
+     * Assigns a nationality to the guest.
+     * @param nationality The nationality to assign.
      */
     public void setNationality(String nationality) {
         this.nationality = nationality;
     }
 
     /**
-     * Constructs a guest with the given name, identifier, and nationality.
-     * @param name The name of the guest.
-     * @param identifier The identifier of the guest.
-     * @param nationality The nationality of the guest.
+     * Constructor to initialize a guest with specified name, ID, and nationality.
+     * @param name The guest's name.
+     * @param identifier The guest's ID.
+     * @param nationality The guest's nationality.
      */
     public Guest(String name, String identifier, String nationality) {
         super(name, identifier);
@@ -34,16 +34,16 @@ public class Guest extends Person {
     }
 
     /**
-     * Constructs a guest with the given nationality.
-     * @param nationality The nationality of the guest.
+     * Constructor to initialize a guest with a specific nationality.
+     * @param nationality The guest's nationality.
      */
     public Guest(String nationality) {
         this.nationality = nationality;
     }
 
     /**
-     * Returns a string representation of the guest object.
-     * @return A string representation of the guest object.
+     * Provides a textual representation of the guest.
+     * @return A string depiction of the guest.
      */
     @Override
     public String toString() {

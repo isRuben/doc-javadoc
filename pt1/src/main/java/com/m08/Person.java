@@ -1,48 +1,49 @@
+```java
 package com.m08;
 
 /**
- * Class representing a person entity.
+ * Class that defines an individual's basic information.
  */
 public class Person {
     protected String name;
     protected String identifier;
     
     /**
-     * Retrieves the name of the person.
-     * @return The name of the person.
+     * Gets the individual's name.
+     * @return The individual's name.
      */
     public String getName() {
         return name;
     }
     
     /**
-     * Sets the name of the person.
-     * @param name The name to be set.
+     * Assigns a name to the individual.
+     * @param name The name to assign.
      */
     public void setName(String name) {
         this.name = name;
     }
     
     /**
-     * Retrieves the identifier of the person.
-     * @return The identifier of the person.
+     * Gets the individual's unique identifier.
+     * @return The individual's identifier.
      */
     public String getIdentifier() {
         return identifier;
     }
     
     /**
-     * Sets the identifier of the person.
-     * @param identifier The identifier to be set.
+     * Assigns a unique identifier to the individual.
+     * @param identifier The identifier to assign.
      */
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
     
     /**
-     * Constructs a person with the given name and identifier.
-     * @param name The name of the person.
-     * @param identifier The identifier of the person.
+     * Constructor to initialize an individual with a name and identifier.
+     * @param name The individual's name.
+     * @param identifier The individual's identifier.
      */
     public Person(String name, String identifier) {
         this.name = name;
@@ -50,8 +51,8 @@ public class Person {
     }
     
     /**
-     * Returns a string representation of the person object.
-     * @return A string representation of the person object.
+     * Provides a textual representation of the individual's details.
+     * @return A string detailing the individual's information.
      */
     @Override
     public String toString() {
@@ -59,8 +60,9 @@ public class Person {
     }
     
     /**
-     * Default constructor.
+     * Default constructor for the Person class.
      */
     public Person() {
     }
 }
+```

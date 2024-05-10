@@ -1,7 +1,7 @@
 package com.m08;
 
 /** 
- * Class that represents a hotel entity.
+ * Defines a class for hotel entities.
  */
 public class Hotel {
     private String name;
@@ -9,65 +9,65 @@ public class Hotel {
     private String web;
     
     /** 
-     * Enum representing the category of the hotel.
+     * Enumeration for the hotel's star rating.
      */
     private enum HotelCategory {
         OneStar, TwoStars, ThreeStars, FourStars, FiveStars
     }
     
     /**
-     * Retrieves the name of the hotel.
-     * @return The name of the hotel.
+     * Gets the hotel's name.
+     * @return The hotel's name.
      */
     public String getName() {
         return name;
     }
     
     /**
-     * Sets the name of the hotel.
-     * @param name The name to be set.
+     * Assigns a name to the hotel.
+     * @param name The name to assign.
      */
     public void setName(String name) {
         this.name = name;
     }
     
     /**
-     * Retrieves the address of the hotel.
-     * @return The address of the hotel.
+     * Gets the hotel's address.
+     * @return The hotel's address.
      */
     public String getAddress() {
         return address;
     }
     
     /**
-     * Sets the address of the hotel.
-     * @param address The address to be set.
+     * Assigns an address to the hotel.
+     * @param address The address to assign.
      */
     public void setAddress(String address) {
         this.address = address;
     }
     
     /**
-     * Retrieves the website URL of the hotel.
-     * @return The website URL of the hotel.
+     * Gets the hotel's website URL.
+     * @return The hotel's website URL.
      */
     public String getWeb() {
         return web;
     }
     
     /**
-     * Sets the website URL of the hotel.
-     * @param web The website URL to be set.
+     * Assigns a website URL to the hotel.
+     * @param web The website URL to assign.
      */
     public void setWeb(String web) {
         this.web = web;
     }
     
     /**
-     * Constructs a hotel with the given name, address, and website URL.
-     * @param name The name of the hotel.
-     * @param address The address of the hotel.
-     * @param web The website URL of the hotel.
+     * Constructor to create a hotel with a specified name, address, and web URL.
+     * @param name The hotel's name.
+     * @param address The hotel's address.
+     * @param web The hotel's web URL.
      */
     public Hotel(String name, String address, String web) {
         this.name = name;
@@ -76,8 +76,8 @@ public class Hotel {
     }
     
     /**
-     * Returns a string representation of the hotel object.
-     * @return A string representation of the hotel object.
+     * Provides a string representation of the hotel entity.
+     * @return A string representation of the hotel.
      */
     @Override
     public String toString() {

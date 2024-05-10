@@ -3,50 +3,50 @@ package com.m08;
 import java.time.LocalDate;
 
 /**
- * Class representing a manager, inheriting from Person.
+ * Class that defines a manager, derived from the Person class.
  */
 public class Manager extends Person {
     private LocalDate startDate;
     private int experience;
     
     /**
-     * Retrieves the start date of the manager.
-     * @return The start date of the manager.
+     * Gets the manager's start date in the company.
+     * @return The manager's start date.
      */
     public LocalDate getStartDate() {
         return startDate;
     }
     
     /**
-     * Sets the start date of the manager.
-     * @param startDate The start date to be set.
+     * Assigns a start date to the manager.
+     * @param startDate The start date to assign.
      */
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
     
     /**
-     * Retrieves the experience of the manager.
-     * @return The experience of the manager.
+     * Gets the number of years of experience the manager has.
+     * @return The manager's years of experience.
      */
     public int getExperience() {
         return experience;
     }
     
     /**
-     * Sets the experience of the manager.
-     * @param experience The experience to be set.
+     * Sets the years of experience for the manager.
+     * @param experience The years of experience to set.
      */
     public void setExperience(int experience) {
         this.experience = experience;
     }
     
     /**
-     * Constructs a manager with the given name, identifier, start date, and experience.
-     * @param name The name of the manager.
-     * @param identifier The identifier of the manager.
-     * @param startDate The start date of the manager.
-     * @param experience The experience of the manager.
+     * Constructor to create a manager with a name, ID, start date, and experience.
+     * @param name The manager's name.
+     * @param identifier The manager's ID.
+     * @param startDate The manager's start date.
+     * @param experience The manager's years of experience.
      */
     public Manager(String name, String identifier, LocalDate startDate, int experience) {
         super(name, identifier);
@@ -55,9 +55,9 @@ public class Manager extends Person {
     }
     
     /**
-     * Constructs a manager with the given start date and experience.
-     * @param startDate The start date of the manager.
-     * @param experience The experience of the manager.
+     * Constructor to create a manager with a start date and experience.
+     * @param startDate The manager's start date.
+     * @param experience The manager's years of experience.
      */
     public Manager(LocalDate startDate, int experience) {
         this.startDate = startDate;
@@ -65,8 +65,8 @@ public class Manager extends Person {
     }
     
     /**
-     * Returns a string representation of the manager object.
-     * @return A string representation of the manager object.
+     * Provides a string representation of the manager's details.
+     * @return A string detailing the manager's information.
      */
     @Override
     public String toString() {
