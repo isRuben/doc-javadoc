@@ -1,4 +1,3 @@
-```java
 package com.m08;
 
 /**
@@ -65,4 +64,3 @@ public class Person {
     public Person() {
     }
 }
-```
